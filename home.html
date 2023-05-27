@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon Restaurants</title>
+    <style>
+        *{ margin: 0;
+           padding: 0; 
+        }
+        #navbar{
+           display: flex;
+           align-items: center;
+           position: sticky;
+           top: 0px;
+        }
+        #logo{
+    margin: 19px 80px;
+    
+
+}
+#logo img{
+    height: 66px;
+   margin: 14px 15px;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+
+    background-color: rgba(194, 247, 197, 0.957);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    margin: 19px 20px;
+    list-style: none;
+    font-size: 1.3rem;
+} 
+#navbar ul li a{
+    display: block;
+    list-style: none;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(17, 17, 18);
+}
+#navbar #log{
+    display: block;
+    list-style: none;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(18, 18, 237);
+   
+}
+#navbar ul li a:hover{
+    display: block;
+    list-style: none;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(15, 16, 15);
+    background-color: rgb(225, 233, 227);
+}
+header{color: rgb(122, 170, 25);
+margin: 30px 30px;
+font-size: large;}
+#para{
+    display: flex;
+    margin: 23px 23px;
+    padding-right: 800px;
+    font-size: large;
+    
+}
+form a{
+    border: black solid 2px;
+    margin: 3px 30px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+    background-color: greenyellow;
+    text-decoration: none;
+    color: black;
+
+}
+.section{
+    margin: 30px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 25px 26px;
+    border-radius: 28px;
+    background: rgba(252, 246, 246, 0.834);
+}
+#services .box img{
+    height: 176px;
+    margin: auto;
+    display: block;
+
+}
+.service-container h1{
+    text-align: center;
+    margin: 4px;
+}
+#services .box p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(68, 125, 12);
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+
+}
+#home::before{
+    content: "";
+
+background:url('https://wallpapertag.com/wallpaper/full/4/d/7/317105-gorgerous-food-background-2990x1918-for-mobile-hd.jpg')no-repeat center center/cover;
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.89;
+top: 0px;
+left: 0px;
+    
+}
+
+    </style>
+</head>
+<body>
+   
+    
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://th.bing.com/th/id/OIP.artkBKqAH93yBBEXwLmnZAHaHa?pid=ImgDet&rs=1" alt="Little Lemon">
+        </div>
+        <ul>
+            <li class="iteam"> <a href="#home">Home</a></li>
+            <li class="iteam"><a href="#about">About</a></li>
+            <li class="iteam"><a href="#Menu">Menu</a></li>
+            <li class="iteam"><a href="Reservation.html">Reservations</a></li>
+            <li class="iteam"><a href="confirm.html">Order Online</a></li>
+            <li class="iteam" id="log"><a href="#Login" id="log">Login</a></li>
+
+        </ul>
+    </nav>
+    <header id="head">
+        <h1 id="h1">Little Lemon</h1>
+        <h3 id="h3">Restaurant</h3>
+    </header>
+    <div id="para">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, quisquam non consectetur ut cupiditate inventore est architecto similique nam nobis magnam modi praesentium neque, ullam quam aliquid molestias veniam laudantium minima beatae officia laborum quidem nemo sapiente! Minus, aliquid ex.</p>
+    </div>
+    <form action="">
+        <div class="form-group">
+           <a href="Reservation.html"> Reserve a table </a>
+        </div>
+    </form>
+    <section id="home">
+        <img src="https://th.bing.com/th?id=OIP.fBe1gguUHhEyZuradl-J6QHaEX&w=325&h=191&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="error">
+    </section>
+    <section class="section">
+        <h1>This weeks special!</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://th.bing.com/th/id/OIP.14vk0Db1eIUqFG-h2uYa6gHaHa?pid=ImgDet&rs=1" alt="error">
+                <h2 class="h-secondary center">Italian pizza</h2>
+                <p>$12.60</p>
+            </div>
+            <div class="box">
+                    <img src="https://th.bing.com/th/id/OIP.RyHIE4fBS7SbGRFq5kH9sQHaE5?w=238&h=180&c=7&r=0&o=5&pid=1.7" alt="error">
+                    <h2 class="h-secondary center">Moussaka</h2>
+                    <p>$15.80</p>
+                    
+            </div>
+            <div class="box">
+                        <img src="https://th.bing.com/th/id/OIP.ywM_T_rM7jFED-ubeSJqaAHaE8?w=242&h=180&c=7&r=0&o=5&pid=1.7" alt="error">
+                        <h2 class="h-secondary center">Mexican Tacos</h2>
+                        <p>$14.20</p>
+                        
+            
+               
+            </div>
+        </div>
+                
+    </section>
+    
+    
+</body>
+</html>

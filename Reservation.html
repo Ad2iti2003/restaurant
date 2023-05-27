@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <style>
+        *{ margin: 0;
+           padding: 0; 
+        }
+        #navbar{
+           display: flex;
+           align-items: center;
+           position: sticky;
+           top: 0px;
+        }
+        #logo{
+    margin: 19px 80px;
+    
+
+}
+#logo img{
+    height: 66px;
+   margin: 14px 15px;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+
+    background-color: rgba(168, 230, 172, 0.957);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    margin: 19px 20px;
+    list-style: none;
+    font-size: 1.3rem;
+} 
+#navbar ul li a{
+    display: block;
+    list-style: none;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(17, 17, 18);
+}
+#navbar #log{
+    display: block;
+    list-style: none;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(18, 18, 237);
+   
+}
+#navbar ul li a:hover{
+    display: block;
+    list-style: none;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(15, 16, 15);
+    background-color: rgb(225, 233, 227);
+}
+section form{
+    width: 1100px;
+    height: 200px;
+    margin: 100px;
+    background-color: rgb(248, 247, 244);
+    display: flex;
+    font-size: 23px;
+    margin: 30px;
+    padding: 50px 50px;
+
+}
+
+#date{
+    padding: 50px;
+    background-color: rgb(204, 246, 220);
+    font-size: large;
+}
+#select_date{
+    margin: 25px;
+}
+#occasion{
+    padding: 50px;
+    background-color: rgb(204, 246, 220);
+    font-size: large;
+
+}
+.occasion{
+    margin: 26px;
+}
+#diner{
+    padding: 50px;
+    background-color: rgb(204, 246, 220);
+    font-size: large;
+}
+#ndiner{
+    margin: 26px;
+
+}
+#time{
+    padding: 50px;
+    background-color: rgb(204, 246, 220);
+    font-size: large;
+}
+#ntime{
+    margin: 26px;
+}
+#a{
+    
+    text-decoration: none;
+    border: rgb(13, 11, 11) solid 4px;
+   
+    text-align: center;
+    padding: 15px 50px;
+    background-color: gold;
+    color: black;
+    margin-left: 550px;
+    border-radius: 10px;
+  
+  
+    
+}
+.img{
+
+}
+#img1{
+    margin: 26px;
+    border-radius: 10px;
+
+}
+#img2{
+    margin: 26px;
+    border-radius: 10px;
+
+
+}
+#img3{
+    margin: 26px;
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://th.bing.com/th/id/OIP.artkBKqAH93yBBEXwLmnZAHaHa?pid=ImgDet&rs=1" alt="Little Lemon">
+        </div>
+        <ul>
+            <li class="iteam"> <a href="home.html">Home</a></li>
+            <li class="iteam"><a href="#about">About</a></li>
+            <li class="iteam"><a href="#Menu">Menu</a></li>
+            <li class="iteam"><a href="Reservation.html">Reservations</a></li>
+            <li class="iteam"><a href="confirm.html">Order Online</a></li>
+            <li class="iteam" id="log"><a href="#Login" id="log">Login</a></li>
+
+        </ul>
+    </nav>
+    
+    <h1>Reservations</h1>
+    <section>
+        <form action="">
+            
+            <div id="select_date" class="box">Select Date    
+            <br>
+            <input type="date" name="" id="date" placeholder="Select Date"> </div> 
+            <div class="occasion" class="box">Occasion  <br>
+            <select name="" id="occasion" aria-placeholder="Occasion">
+                <option value="">Birthday</option>
+                <option value="">Engagement</option>
+                <option value="">Anniversary</option>
+            </select></div> <br>
+            <div class="box" id="ndiner">  Number of Diners <br>
+            <select name="" id="diner">
+                <option value="">1 Diner</option>
+                <option value="">2 Diner</option>
+                <option value="">3 Diner</option>
+                <option value="">4 Diner</option>
+                <option value="">5 Diner</option>
+                <option value="">6 Diner</option>
+                <option value="">7 Diner</option>
+                <option value="">8 Diner</option>
+                <option value="">9 Diner</option>
+                <option value="">10 Diner</option>
+            </select> </div>
+        
+            <div class="box" id="ntime">  Time  <br>
+                <select name="" id="time">
+                <option value="">5:00 pm</option>
+                <option value="">6:00 pm</option>
+                <option value="">7:00 pm</option>
+                <option value="">8:00 pm</option>
+                <option value="">9:00 pm</option>
+                <option value="">10:00 pm</option>
+            </select>
+        </div>
+        </form>
+    </section>
+    <div class="img">
+        <img src="https://th.bing.com/th?id=OIP.maQpFJiRuDMauaTZ3N7KiQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" id="img1" alt="">
+        <img src="https://th.bing.com/th/id/OIP.4wxtBWIscn3f4u_OeyDB7AHaEo?w=316&h=197&c=7&o=5&pid=1.7" id="img2" alt="">
+        <img src="https://th.bing.com/th/id/OIP.688ZgkyrhQ5jYy-4NcxaQgHaEK?w=294&h=212&c=7&o=5&pid=1.7" id="img3" alt="">
+    </div>
+    <a id="a" href="confirm.html">Reserve a Table</a>
+    
+</body>
+</html>
